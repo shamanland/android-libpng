@@ -1,0 +1,3 @@
+[submodule "libpng/src/main/c"]
+	path = libpng/src/main/c
+        url = https://github.com/shamanland/libpng

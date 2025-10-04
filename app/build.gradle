@@ -1,0 +1,24 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'org.libpng.example'
+    compileSdk = 36
+
+    defaultConfig {
+        minSdk = 24
+        targetSdk = 36
+
+        applicationId 'org.libpng.example'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+    implementation project(':libpng')
+}
