@@ -9,6 +9,7 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import org.libpng.PngFile;
+import org.libpng.PngImage;
 
 import java.io.File;
 import java.io.IOException;
@@ -26,8 +27,10 @@ public class MainActivity extends Activity {
             Log.w(LOG_TAG, ex);
         }
 
+        PngImage pngImage = new PngImage();
+
         TextView textView = new TextView(this);
-        textView.setText("Hello PNG");
+        textView.setText("Hello PNG: " + pngImage);
 
         FrameLayout root = new FrameLayout(this);
         root.addView(textView, new FrameLayout.LayoutParams(
